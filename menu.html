@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - TEFA Bakery</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Polije<span>Bake</span></a>
+
+        <div class="navbar-nav">
+          <a href="index.html">Beranda</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="menu.html">Menu &amp; Produk</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu">
+            <i data-feather="menu"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVBAR END -->
+
+    <main>
+      <section id="banner">
+        <h1>Menu &amp; Produk</h1>
+        <p>
+          Temukan berbagai pilihan roti, pastry, dan hidangan lezat dari TEFA
+          Bakery
+        </p>
+        <img
+          src="assets/images/banner-roti.jpg"
+          alt="Aneka roti dan pastry dalam keranjang"
+          width="450"
+        />
+      </section>
+
+      <section id="daftar-produk">
+        <nav aria-label="Kategori produk">
+          <ul>
+            <li>
+              <a href="#semua" data-kategori="semua" class="aktif"
+                >Semua Produk</a
+              >
+            </li>
+            <li><a href="#roti" data-kategori="roti">Roti</a></li>
+            <li><a href="#pastry" data-kategori="pastry">Pastry</a></li>
+            <li><a href="#catering" data-kategori="catering">Catering</a></li>
+          </ul>
+        </nav>
+
+        <h2>Daftar Produk</h2>
+
+        <article data-kategori="roti">
+          <img
+            src="assets/images/roti-cokelat.jpg"
+            alt="Roti Cokelat"
+            width="250"
+          />
+          <h3>Roti Cokelat</h3>
+          <p>Rp 8.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="roti">
+          <img
+            src="assets/images/roti-cokelat.jpg"
+            alt="Roti Cokelat"
+            width="250"
+          />
+          <h3>Roti Cokelat</h3>
+          <p>Rp 8.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="roti">
+          <img
+            src="assets/images/roti-cokelat.jpg"
+            alt="Roti Cokelat"
+            width="250"
+          />
+          <h3>Roti Cokelat</h3>
+          <p>Rp 8.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="pastry">
+          <img src="assets/images/pastry.jpg" alt="Pastry" width="250" />
+          <h3>Pastry</h3>
+          <p>Rp 10.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="roti">
+          <img
+            src="assets/images/roti-cokelat.jpg"
+            alt="Roti Cokelat"
+            width="250"
+          />
+          <h3>Roti Cokelat</h3>
+          <p>Rp 8.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="roti">
+          <img
+            src="assets/images/roti-cokelat.jpg"
+            alt="Roti Cokelat"
+            width="250"
+          />
+          <h3>Roti Cokelat</h3>
+          <p>Rp 8.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="roti">
+          <img src="assets/images/roti-keju.jpg" alt="Roti Keju" width="250" />
+          <h3>Roti Keju</h3>
+          <p>Rp 7.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="pastry">
+          <img src="assets/images/pastry.jpg" alt="Croissant" width="250" />
+          <h3>Croissant</h3>
+          <p>Rp 12.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="catering">
+          <img
+            src="assets/images/catering.jpg"
+            alt="Paket Snack Box"
+            width="250"
+          />
+          <h3>Paket Snack Box</h3>
+          <p>Rp 25.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="roti">
+          <img
+            src="assets/images/roti-cokelat.jpg"
+            alt="Roti Cokelat"
+            width="250"
+          />
+          <h3>Roti Cokelat</h3>
+          <p>Rp 8.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="pastry">
+          <img src="assets/images/pastry.jpg" alt="Pastry Keju" width="250" />
+          <h3>Pastry Keju</h3>
+          <p>Rp 11.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="catering">
+          <img
+            src="assets/images/catering.jpg"
+            alt="Paket Coffee Break"
+            width="250"
+          />
+          <h3>Paket Coffee Break</h3>
+          <p>Rp 30.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="roti">
+          <img src="assets/images/roti-keju.jpg" alt="Roti Keju" width="250" />
+          <h3>Roti Keju</h3>
+          <p>Rp 7.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="pastry">
+          <img src="assets/images/pastry.jpg" alt="Pastry" width="250" />
+          <h3>Pastry</h3>
+          <p>Rp 10.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="catering">
+          <img
+            src="assets/images/catering.jpg"
+            alt="Paket Snack Box"
+            width="250"
+          />
+          <h3>Paket Snack Box</h3>
+          <p>Rp 25.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="roti">
+          <img
+            src="assets/images/roti-cokelat.jpg"
+            alt="Roti Cokelat"
+            width="250"
+          />
+          <h3>Roti Cokelat</h3>
+          <p>Rp 8.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="pastry">
+          <img src="assets/images/pastry.jpg" alt="Croissant" width="250" />
+          <h3>Croissant</h3>
+          <p>Rp 12.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <article data-kategori="catering">
+          <img
+            src="assets/images/catering.jpg"
+            alt="Paket Coffee Break"
+            width="250"
+          />
+          <h3>Paket Coffee Break</h3>
+          <p>Rp 30.000</p>
+          <p>Tersedia</p>
+          <p><a class="tombol tombol-detail" href="#">Detail</a></p>
+        </article>
+
+        <nav id="pagination" aria-label="Halaman produk"></nav>
+      </section>
+
+      <dialog id="dialog-detail">
+        <img id="detail-gambar" src="" alt="" width="300" />
+        <h2 id="detail-nama"></h2>
+        <p id="detail-harga"></p>
+        <p id="detail-status"></p>
+        <p>
+          <a class="tombol" href="https://wa.me/6280000000000"
+            >Pesan via WhatsApp</a
+          >
+        </p>
+        <button type="button" id="detail-tutup">Tutup</button>
+      </dialog>
+    </main>
+
+    <footer>
+      <section>
+        <img
+          src="assets/images/logo-tefa-bakery.png"
+          alt="Logo Tefa Bakery"
+          width="80"
+        />
+        <h2>Tefa Bakery</h2>
+      </section>
+
+      <nav aria-label="Navigasi footer">
+        <h3>Navigasi</h3>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="menu-produk.html">Menu &amp; Produk</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h3>Hubungi Kami</h3>
+        <address>
+          Jl. Tawang Mangu No. 68, Pintu Masuk Belakang Politeknik Negeri Jember
+        </address>
+        <ul>
+          <li><a href="https://wa.me/6280000000000">WhatsApp</a></li>
+          <li>
+            <a href="https://www.instagram.com/tefasippolije">Instagram</a>
+          </li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
+      </section>
+
+      <p>&copy; 2026 Tefa Bakery. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
