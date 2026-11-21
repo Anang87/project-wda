@@ -7,127 +7,170 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
       rel="stylesheet"
     />
+
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- NAVBAR -->
+    <!-- Navbar Start -->
     <header>
       <nav class="navbar">
-        <a href="#" class="navbar-logo">Polije<span>Bake</span></a>
+        <a href="index.html" class="navbar-logo">Polije<span>Bake</span></a>
 
         <div class="navbar-nav">
-          <a href="#">Beranda</a>
+          <a href="index.html" class="active">Beranda</a>
           <a href="tentang.html">Tentang</a>
           <a href="menu.html">Menu &amp; Produk</a>
           <a href="kontak.html">Kontak</a>
         </div>
+
         <div class="navbar-extra">
-          <a href="#" id="hamburger-menu">
+          <a href="#" id="hamburger-menu" aria-label="Buka menu">
             <i data-feather="menu"></i>
-          </a>git
+          </a>
         </div>
       </nav>
     </header>
-    <!-- NAVBAR END -->
+    <!-- Navbar End -->
 
-    <!-- Hero Section start -->
+    <!-- Main Start -->
     <main>
-      <section id="beranda">
-        <h1>TEFA Bakery</h1>
-        <p>
-          TEFA Bakery menyediakan roti, pastry, dan paket catering untuk
-          kebutuhan harian maupun acara khusus
-        </p>
-        <p><a class="tombol" href="menu.html">Lihat Produk</a></p>
-        <img
-          src="assets/images/hero-roti.jpg"
-          alt="Roti baguette hangat dari TEFA Bakery"
-          width="450"
-        />
+      <!-- Hero Section -->
+      <section id="beranda" class="hero">
+        <div class="hero-content">
+          <h1>TEFA Bakery</h1>
+          <p>
+            TEFA Bakery menyediakan roti, pastry, dan paket catering untuk
+            kebutuhan harian maupun acara khusus.
+          </p>
+          <a class="tombol" href="menu.html">Lihat Produk</a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="assets/images/hero-roti.jpg"
+            alt="Roti baguette hangat dari TEFA Bakery"
+          />
+        </div>
       </section>
 
-      <section id="keunggulan">
-        <h2>Keunggulan Kami</h2>
-        <ul>
-          <li>
-            <img/>
-            <p>Bahan Pilihan Premium</p>
-          </li>
-          <li>
-            <img/>
-            <p>100% Produk Pilihan</p>
-          </li>
-          <li>
-            <img/>
-            <p>Harga Terjangkau</p>
-          </li>
-          <li>
-            <img/>
-            <p>Pesan Mudah Via WhatsApp</p>
-          </li>
-        </ul>
+      <!-- Keunggulan Section -->
+      <section id="keunggulan" class="keunggulan">
+        <div class="keunggulan-item">
+          <img src="assets/images/premium.png" alt="Bahan pilihan premium" />
+          <p>Bahan Pilihan Premium</p>
+        </div>
+
+        <div class="keunggulan-item">
+          <img src="assets/images/produk.png" alt="Produk berkualitas" />
+          <p>100% Produk Pilihan</p>
+        </div>
+
+        <div class="keunggulan-item">
+          <img src="assets/images/harga.png" alt="Harga terjangkau" />
+          <p>Harga Terjangkau</p>
+        </div>
+
+        <div class="keunggulan-item">
+          <img
+            src="assets/images/whatsapp.png"
+            alt="Pemesanan melalui WhatsApp"
+          />
+          <p>Pesan Mudah Via WhatsApp</p>
+        </div>
       </section>
 
-      <section id="produk-unggulan">
-        <h2>Produk Unggulan</h2>
-        <p>
-          Jelajahi produk unggulan kami, hadir dengan tekstur lembut, aroma
-          harum, dan rasa yang istimewa.
-        </p>
-        <article>
-          <h3>Roti Cokelat</h3>
-          <p>Rp 8.000</p>
-        </article>
+      <!-- Produk Unggulan -->
+      <section id="produk-unggulan" class="produk">
+        <div class="produk-header">
+          <h2>Produk Unggulan</h2>
+          <p>
+            Jelajahi produk unggulan kami, hadir dengan tekstur lembut, aroma
+            harum, dan rasa yang istimewa.
+          </p>
+        </div>
 
-        <article>
-          <h3>Roti Keju</h3>
-          <p>Rp 7.000</p>
-        </article>
+        <div class="produk-container">
+          <article class="produk-card">
+            <img src="assets/images/roti-cokelat.jpg" alt="Roti Cokelat" />
 
-        <article>
-          <h3>Roti Cokelat</h3>
-          <p>Rp 8.000</p>
-        </article>
+            <div class="produk-desc">
+              <h3>Roti Cokelat</h3>
+              <p>Rp 8.000</p>
+            </div>
+          </article>
+
+          <article class="produk-card">
+            <img src="assets/images/roti-keju.jpg" alt="Roti Keju" />
+
+            <div class="produk-desc">
+              <h3>Roti Keju</h3>
+              <p>Rp 7.000</p>
+            </div>
+          </article>
+
+          <article class="produk-card">
+            <img src="assets/images/roti-cokelat.jpg" alt="Roti Cokelat" />
+
+            <div class="produk-desc">
+              <h3>Roti Cokelat</h3>
+              <p>Rp 8.000</p>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section id="tentang">
-        <h2>Tentang Tefa Bakery</h2>
-        <p>
-          TEFA Bakery (sering disebut TeFa Bakery) adalah sebuah unit usaha
-          kuliner dan fasilitas Teaching Factory (Tefa) yang berada di bawah
-          naungan Politeknik Negeri Jember.
-        </p>
-        <p><a class="tombol" href="tentang.html">Selengkapnya</a></p>
+      <!-- Tentang TEFA Bakery -->
+      <section id="tentang" class="tentang">
+        <div class="tentang-content">
+          <h2>Tentang TEFA Bakery</h2>
+          <p>
+            TEFA Bakery (sering disebut TeFa Bakery) adalah sebuah unit usaha
+            kuliner dan fasilitas Teaching Factory (Tefa) yang berada di bawah
+            naungan Politeknik Negeri Jember.
+          </p>
+          <a class="tombol" href="tentang.html">Selengkapnya</a>
+        </div>
+
+        <div class="tentang-image">
+          <img src="assets/images/tentang-tefa.jpg" alt="Suasana TEFA Bakery" />
+        </div>
       </section>
 
-      <section id="pesan">
-        <h2>Pesan Sekarang untuk Momen Spesial Anda</h2>
-        <p>
-          Hubungi kami melalui WhatsApp untuk pemesanan produk atau catering.
-        </p>
-        <p>
-          <a class="tombol" href="https://wa.me/6280000000000"
-            >Order Via WhatsApp</a
+      <!-- Pesan Sekarang -->
+      <section id="pesan" class="pesan">
+        <div class="pesan-content">
+          <h2>Pesan Sekarang untuk Momen Spesial Anda</h2>
+          <p>
+            Hubungi kami melalui WhatsApp untuk pemesanan produk atau catering.
+          </p>
+          <a
+            class="tombol"
+            href="https://wa.me/6280000000000"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-        </p>
+            Order Via WhatsApp
+          </a>
+        </div>
       </section>
     </main>
-    <!-- Hero Section End -->
+    <!-- Main End -->
 
-    <!-- Footer Start-->
+    <!-- Footer Start -->
     <footer>
-      <section>
-        <img src="assets/images/" alt="Logo Tefa Bakery" width="80" />
-        <h2>Tefa Bakery</h2>
+      <section class="footer-brand">
+        <h2>TEFA Bakery</h2>
+        <p>Roti, pastry, dan catering untuk berbagai kebutuhan.</p>
       </section>
 
       <nav aria-label="Navigasi footer">
@@ -140,11 +183,12 @@
         </ul>
       </nav>
 
-      <section>
+      <section class="footer-contact">
         <h3>Hubungi Kami</h3>
         <address>
           Jl. Tawang Mangu No. 68, Pintu Masuk Belakang Politeknik Negeri Jember
         </address>
+
         <ul>
           <li><a href="https://wa.me/6280000000000">WhatsApp</a></li>
           <li>
@@ -154,15 +198,18 @@
         </ul>
       </section>
 
-      <p>&copy; 2026 Tefa Bakery. All Rights Reserved.</p>
+      <p class="footer-copyright">
+        &copy; 2026 TEFA Bakery. All Rights Reserved.
+      </p>
     </footer>
-    <!-- Footer end-->
+    <!-- Footer End -->
 
     <!-- Feather Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script>
       feather.replace();
     </script>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
